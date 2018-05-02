@@ -16,7 +16,7 @@ class MessagesController < ApplicationController
             }
           }
       
-        response = HTTParty.post("https://api.telegram.org/bot" + ENV["TELEGRAM_API_KEY] + "/sendMessage", options)
+        response = HTTParty.post("https://api.telegram.org/bot" + ENV["TELEGRAM_API_KEY"] + "/sendMessage", options)
         puts response.body
     end
 

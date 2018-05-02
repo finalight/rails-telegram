@@ -42,5 +42,8 @@ module RailsTelegram
     }
 
     response = HTTParty.post("https://api.telegram.org/bot"  + ENV["TELEGRAM_API_KEY"] + "/setWebhook", options)
+    puts response.code
+    puts response.body
+    
   end
 end
