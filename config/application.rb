@@ -32,6 +32,8 @@ module RailsTelegram
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
+    puts ENV["URL"]
+    
     options = {
       body: {
         url: ENV["URL"] + "/api/messages"
