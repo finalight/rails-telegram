@@ -35,9 +35,10 @@ module RailsTelegram
     puts "INITIALIZING APP HERE"
     puts ENV["URL"]
 
+    message_url = ENV["URL"] + "/api/messages"
     options = {
       body: {
-        url: ENV["URL"] + "/api/messages"
+        url: message_url
       }
     }
 
